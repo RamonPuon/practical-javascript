@@ -9,7 +9,7 @@ lista1.sort(function(a,b){
     return a-b;
 });
 
-const mitadLista1 = parseInt(lista1.lenght/2);
+const mitadLista1 = parseInt(lista1.length/2);
 
 function esPar(numero){
     if(numero % 2 === 0){
