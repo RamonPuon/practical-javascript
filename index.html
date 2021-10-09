@@ -4,7 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
     <title>Home | Curso Práctico Javascript</title>
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+            background-image: linear-gradient(to right top, #051937, #00446b, #007493, #00a7a5, #26d8a0);
+            height: 100vh;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            justify-content: center;
+            align-items: center;
+        }
+        .taller{
+            display: flex;
+            border-radius: 8px;
+            border: 1px solid;
+            align-items: center;
+            height: 120px;
+            padding-left: 20px;
+        }
+        .taller a{
+            text-decoration: none;
+            color: rgb(201, 228, 228);
+        }
+        .image{
+            display: flex;
+            align-items: center;
+            border-radius: 50%;
+            justify-content: center;
+            background-color: rgb(87, 190, 87);
+            margin-left: 16px;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,29 +51,45 @@
         <p>Retos desarrollados por Ramón Puón</p>
     </header>
 
-    <section>
+    <section class="container">
         <nav>
-            <ol>
-                <li>
-                    <a href="./figuras.html">Taller #1</a>
-                </li>
-                <li>
-                    <a href="./descuentos.html">Taller #2</a>
-                </li>
-                <li>
-                    <a href="./promedio.html">Taller #3.a</a>
-                </li>
-                <li>
-                    <a href="./mediana.html">Taller #3.b</a>
-                </li>
-                <li>
-                    <a href="./moda.html">Taller #3.c</a>
-                </li>
-                <li>
-                    <a href="./salarios.html">Taller #4</a>
-                </li>
-            </ol>
+
         </nav>
+        <div>
+            <h1>Temas Aprendidos</h1>
+            <ul>
+                <li>Javascript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </div>
+        <div >
+            <div class="taller">
+                <a href="./figuras.html">Figuras Geométricas</a>
+                <div class="image">
+                    <img src="https://img.icons8.com/carbon-copy/100/000000/square.png"/>
+                </div>
+            </div>
+            <div class="taller">
+                <a href="./descuentos.html">Calculadora de Descuentos</a>
+                <div class="image">
+                    <img src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/60/000000/external-discount-sales-vitaliy-gorbachev-fill-vitaly-gorbachev.png"/>
+                </div>
+            </div>
+            <div class="taller">
+                <a href="">Análisis Estadístico</a>
+                <div class="image">
+                    <img src="https://img.icons8.com/external-itim2101-lineal-itim2101/64/000000/external-statistics-network-technology-itim2101-lineal-itim2101.png"/>
+                </div>
+            </div>
+            <div class="taller">
+                <a href="./salarios.html">Análisis Salarial</a>
+                <div class="image">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/salary-female.png"/>
+                </div>
+            </div>
+            
+        </div>
     </section>
 </body>
 </html>
